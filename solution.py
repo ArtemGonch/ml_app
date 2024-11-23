@@ -802,7 +802,7 @@ class NonLinearDualSVM:
         Возвращает:
         -------
         self : NonLinearDualSVM
-            Обученная модель.
+            Обученная модель
         """
         
         self.estimators += [SoftMarginSVM(C=self.C, kernel_func=self.kernel, classes_names=list((cl1, cl2))).fit(X1, y1) for X1, y1, cl1, cl2 in one_vs_one(X, y)]
