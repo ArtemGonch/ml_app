@@ -1,0 +1,8 @@
+*__pycache__/
+*.ipynb_checkpoints/
+*.pytest_cache/
+*.ipynb
+*.txt
+*.DS_Store
+!*EDA.ipynb
+!requirements.txt
